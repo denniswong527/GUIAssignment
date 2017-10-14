@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Switch Image</title>
+<script type="text/javascript" src="jslib/jquery-1.4.min.js"></script>
+<style type="text/css">
+	#content {
+		border:0px;
+		position:relative;
+		overflow:hidden;
+		width:573px;
+		height:257px;
+		font-size:14px;
+	}
+	#imgID {
+		width:88px;
+		position:absolute;
+		left:10px;
+		bottom:10px;
+	}
+	#imgID li {
+		padding-left:6px;
+		float:left;
+		text-indent:-9999px;
+		width:16px;
+		height:16px;
+		overflow:hidden;
+		background-image:url(img/number.png);
+		background-repeat:no-repeat;
+	}
+	#bj_0 {
+		background-position:0 0;
+	}
+	#bj_1 {
+		background-position:-22px 0;
+	}
+	#bj_2 {
+		background-position:-44px 0;
+	}
+	#bj_3 {
+		background-position:-66px 0;
+	}
+	#bj_0.active {
+		background-position:0 -16px;
+	}
+	#bj_1.active {
+		background-position:-22px -16px;
+	}
+	#bj_2.active {
+		background-position:-44px -16px;
+	}
+	#bj_3.active {
+		background-position:-66px -16px;
+	}
+</style>
+<script type="text/javascript">
+	$(function(){
+		$('#imgID li').mouseover(function(){
+			$("#"+this.id).addClass("active").siblings().removeClass("active");
+			$('.imgarea li img').fadeIn(4000).attr("src","img/"+(this.id)+".jpg");
+			});
+	});
+</script>
+</head>
+<body>
+<div id="content">
+  <ul class="imgarea">
+    <li ><a href="#"><img src="img/bj_0.jpg" width="373" height="257" /></a></li>
+    <li ><a href="#"><img src="img/bj_0.jpg" width="373" height="257" /></a></li>
+    <li ><a href="#"><img src="img/bj_0.jpg" width="373" height="257" /></a></li>
+    <li ><a href="#"><img src="img/bj_0.jpg" width="373" height="257" /></a></li>
+  </ul>
+  <ul id="imgID">
+    <li id="bj_0" class="active"></li>
+    <li id="bj_1" >Switch 2</li>
+    <li id="bj_2">Switch 3</li>
+    <li id="bj_3">Switch 4</li>
+  </ul>
+</div>
+</body>
+</html>
