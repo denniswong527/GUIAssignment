@@ -372,9 +372,9 @@ background text
 }
 
 .closebttn:before {
-  content: "✖";
-  border: 1px solid gray;
-  background-color:#eee;
-  padding:0.5em;
-  cursor: pointer;
+    content: "✖";
+    border: 1px solid gray;
+    background-color: #eee;
+    padding: 0.5em;
+    cursor: pointer;
 }
