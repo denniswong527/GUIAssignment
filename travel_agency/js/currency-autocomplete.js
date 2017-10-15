@@ -22,7 +22,7 @@ $(function(){
     { value: 'Bolivian boliviano', data: 'BOB' },
     { value: 'Bosnia-Herzegovina konvertibilna marka', data: 'BAM' },
     { value: 'Botswana pula', data: 'BWP' },
-    { value: 'Brazilian real', data: 'BRL' },
+    { value: 'London', data: 'BRL' },
     { value: 'Brunei dollar', data: 'BND' },
     { value: 'Bulgarian lev', data: 'BGN' },
     { value: 'Burundi franc', data: 'BIF' },

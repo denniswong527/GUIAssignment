@@ -25,14 +25,22 @@
           <span class="amex"></span>
           <span class="discover"></span>
       </div>
-      <form>
+      <form action="../index.html" >
+          <input type="hidden" name="payment" value="yes" />
           <div class="form-group">
               <label for="PaymentAmount">Payment amount</label>
               <div class="amount-placeholder">
+                  <span>Flight</span>
                   <span>$</span>
-                  <span>500.00</span>
+                  <span>500.00</span>        <p> 
+                  <span>Taxes</span>
+                  <span>$</span>
+                  <span>400.00</span>  <p>
+                   <span>Total</span>
+                  <span>$</span>
+                  <span>900.00</span>  
               </div>
-          </div>
+          </div> <br><br><br><br>
           <div class="form-group">
               <label or="NameOnCard">Name on card</label>
               <input id="NameOnCard" class="form-control" type="text" maxlength="255"></input>
@@ -65,7 +73,7 @@
           </div>
           <button id="PayButton" class="btn btn-block btn-success submit-button" type="submit">
               <span class="submit-button-lock"></span>
-              <span class="align-middle">Pay $500.00</span>
+              <span class="align-middle">Pay $900.00</span>
           </button>
       </form>
   </div>

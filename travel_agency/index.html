@@ -188,10 +188,13 @@
 				});
 			$().UItoTop({ easingType: 'easeOutQuart' });
               var aa=QueryString("signup_submit");
+                var bb=QueryString("payment");
                if(aa!=""){
               document.getElementById("log").style.display = "none";
                }
-                
+                  if(bb=="yes"){
+              alert("payment succussfull");
+               }
                 
                 
 			});
@@ -377,7 +380,7 @@
 						<!--<div class="tmTextarea">
 							<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
 						</div>-->
-						<a href="#" class="btn" data-type="submit">Search</a>
+						<a href="index-1.html" class="btn">Search</a>
 					</form>
 				</div>
                  <div class="login-page" id="log">
@@ -390,7 +393,8 @@
                 <button>create</button>
                 <p class="message">Already registered? <a href="#">Sign In</a></p>
             </form>
-            <form class="login-form">
+            <form class="login-form" action="index.html">
+                   <input type="hidden" name="signup_submit" value="signin" />
                 <input type="text" placeholder="username" />
                 <input type="password" placeholder="password" />
                 <button>login</button>
