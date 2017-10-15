@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <title>Material design sign up form</title>
   
-  
+    <style>
+      #aa{
+    background-image: url("images/GP_HongKong.jpg");
+          background-repeat:no-repeat;
+
+   background-size:cover;
+}
+    </style>
   
       <link rel="stylesheet" href="css/styleforsignup.css">
 
   
 </head>
 
-<body>
+<body id='aa'>
   <div id="login-box">
   <div class="left">
     <h1>Sign up</h1>
@@ -28,8 +35,11 @@
     <span class="loginwith">Sign in with<br />social network</span>
     
     <button class="social-signin facebook">Log in with facebook</button>
-        <button class="social-signin vtc">Log in with VTC</button>
+    
+        <button class="social-signin vtc" onclick="window.location.href='vtclogin.html'">Log in with VTC</button>
+   
     <button class="social-signin twitter">Log in with Twitter</button>
+    
     <button class="social-signin google">Log in with Google+</button>
   </div>
   <div class="or">OR</div>

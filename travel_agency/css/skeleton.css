@@ -21,7 +21,7 @@
 /* #Base 960 Grid
 ================================================== */
 .grid_12,#menu{position: absolute;}
-    .container_12{ position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container_12{ position: relative; width: 1080px; margin: 0 auto; padding: 0; }
 	.grid_1,
 	.grid_2,
 	.grid_3,
