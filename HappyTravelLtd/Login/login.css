@@ -378,3 +378,11 @@ background text
     padding: 0.5em;
     cursor: pointer;
 }
+
+.redclosebttn:before {
+    content: "back";
+    border: 1px solid red;
+    background-color: #eee;
+    padding: 0.5em;
+    cursor: pointer;
+}

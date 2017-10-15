@@ -47,6 +47,8 @@ function ocultar_login_sign_up() {
 
 }
 
-$(document).ready(function(){
-    $(".btn_login_change")
+$(document).ready(function () {
+    $(".btn_login_change").click(function () {
+
+    });
 });
